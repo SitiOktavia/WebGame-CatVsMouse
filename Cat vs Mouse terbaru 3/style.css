@@ -1,0 +1,202 @@
+body{
+	text-align: center;
+	background-color: #b0e0d7;
+	}
+	
+#board{
+	width:960px;
+	height: 540px;
+	background: url('img/bg1.png'); 
+	background-size: 100% 100%; 
+	margin: 20px auto;
+	}
+#area{
+	width: 960px;
+	height: 540px;
+	position: absolute;
+	overflow: hidden;
+}
+@keyframes kcg_jalan{
+	0%{
+		background: url('img/kucing1.png'); 
+		background-size: 100% 100%;
+	}
+	35%{
+		background: url('img/kucing2.png'); 
+		background-size: 100% 100%;
+		}
+	80%{
+		background: url('img/kucing3.png'); 
+		background-size: 100% 100%;
+	}
+}
+#kucing{
+	width: 130px;
+	height: 100px;
+	background: url('img/kucing1.png');
+	background-size: 100% 100%;
+	position: absolute;
+	animation : kcg_jalan 0.5s infinite;
+	transition: 0.75s;
+}
+
+#kucing.freeze{
+	animation: none;
+	background: url('img/kucing1.png');	
+	background-size: 100% 100%;
+}
+
+@keyframes tikus_jalan{
+	0%{
+		background: url('img/ntikus1.png'); 
+		background-size: 100% 100%;
+	}
+	35%{
+		background: url('img/ntikus2.png'); 
+		background-size: 100% 100%;
+	}
+	80%{
+		background: url('img/ntikus3.png'); 
+		background-size: 100% 100%;
+	}
+}
+#tikus{
+	width: 100px;
+	height: 60px;
+	background: url('img/ntikus1.png');
+	background-size: 100% 100%;
+	position: absolute;
+	animation : tikus_jalan 0.45s infinite;
+	transition: 0.75s;
+}
+
+#tikus.freeze{
+	animation: none;
+	background: url('img/ntikus1.png');	
+	background-size: 100% 100%;
+}
+
+#ikanmkn{
+	width: 50px;
+	height: 50px;
+	margin-top: 450px;	
+	margin-left: 450px;
+	background: url('img/ikan.png');
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+#kejumkn{
+	width: 50px;
+	height: 50px;
+	margin-top: 435px;
+	margin-left: 650px;
+	background: url('img/keju.png');	
+	background-size: 100% 100%;	
+	overflow: hidden;
+}
+
+button {
+    background: #2b3b46;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 32px;
+    border: 0;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    right: 25px;
+	margin-top: 160px;
+	margin-left: 2%;
+}
+
+.btRestart {
+    background: #2b3b46;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 32px;
+    border: 0;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    right: 25px;
+	margin-top: 160px;
+	margin-left: 2%;
+	display: none;
+}
+
+button:hover{
+    color: #2b3b46;
+    background: #fff;
+}
+#boardStart{
+	width:960px;
+	height: 540px;
+	background: url('img/start.png'); 
+	background-size: 100% 100%; 
+	margin: 20px auto;
+}
+#boardInfo{
+	width:960px;
+	height: 540px;
+	background: url('img/info.png'); 
+	background-size: 100% 100%; 
+	margin: 20px auto;
+}
+
+#finish{
+	width: 33px;
+	height: 58px;
+	margin-top: 470px;
+	margin-left: 920px;
+	background: url('img/FINISH.png');	
+	background-size: 100% 100%;
+	position: absolute;
+}
+
+#tikusWin{
+	width:960px;
+	height: 540px;
+	margin: 0px 0px 0px 0px;
+	background: url('img/mousewin.png');	
+	background-size: 100% 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+#kucingWin{
+	width:960px;
+	height: 540px;
+	margin: 0px 0px 0px 0px;
+	background: url('img/catwin.png');	
+	background-size: 100% 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+#seriWin{
+	width:960px;
+	height: 540px;
+	margin: 0px 0px 0px 0px;
+	background: url('img/seriwin.png');	
+	background-size: 100% 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+h3{
+	background: #2b3b46;
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 20px;
+    border: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: bold;
+}
